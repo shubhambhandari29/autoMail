@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .navi {
+        background-color: #f3f3ed;
+      }
+      .divi {
+        background-color: #f3f3ed;
+        border-radius: 25px;
+      }
+
+    </style>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Bootstrap CSS -->
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+  crossorigin="anonymous"
+/>
+
+
+<title>E-mail Sender!</title>
+
+<link rel="icon" href="/static/logo.png" type="image/x-icon" />
+    <nav class="navi navbar fixed-top navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/static/logo.png"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          E-MAIL SENDER
+        </a>
+      </div>
+    </nav>
+  </head>
+  <br />
+
+  <br /><br /><br />
+
+  <body>
+    <center>
+      <form action="/" class="row g-3"method="post" id="form2">
+      <br />
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-1">Mail has been sent.</h1>
+          <h1 class="display-4">Thank you for chosing us</h1>
+          <p class="lead">
+            Click below to go to homepage.
+          </p>
+          <br /><br />
+        </div>
+        <a class="btn btn-primary btn-lg" onclick="gohome(event)" role="button">Send another mail</a>
+      </div>
+    
+    </center>
+<script>
+            function gohome(event) {
+              document.getElementById('form2').submit();
+            }
+</script>
+  </form>
+  </body>
+  </html>
+    
